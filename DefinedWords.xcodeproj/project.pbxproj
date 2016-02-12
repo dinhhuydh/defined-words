@@ -13,6 +13,7 @@
 		B18F96A21C6DA08D00202E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18F96A11C6DA08D00202E0C /* Assets.xcassets */; };
 		B18F96A51C6DA08D00202E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18F96A31C6DA08D00202E0C /* LaunchScreen.storyboard */; };
 		B18F96B01C6DA08D00202E0C /* DefinedWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F96AF1C6DA08D00202E0C /* DefinedWordsTests.swift */; };
+		B18F96BB1C6DA7E300202E0C /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F96BA1C6DA7E300202E0C /* WordManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B18F96AB1C6DA08D00202E0C /* DefinedWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefinedWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18F96AF1C6DA08D00202E0C /* DefinedWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedWordsTests.swift; sourceTree = "<group>"; };
 		B18F96B11C6DA08D00202E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18F96BA1C6DA7E300202E0C /* WordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				B18F969A1C6DA08D00202E0C /* AppDelegate.swift */,
 				B18F969C1C6DA08D00202E0C /* ViewController.swift */,
 				B18F969E1C6DA08D00202E0C /* Main.storyboard */,
+				B18F96BA1C6DA7E300202E0C /* WordManager.swift */,
 				B18F96A11C6DA08D00202E0C /* Assets.xcassets */,
 				B18F96A31C6DA08D00202E0C /* LaunchScreen.storyboard */,
 				B18F96A61C6DA08D00202E0C /* Info.plist */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18F96BB1C6DA7E300202E0C /* WordManager.swift in Sources */,
 				B18F969D1C6DA08D00202E0C /* ViewController.swift in Sources */,
 				B18F969B1C6DA08D00202E0C /* AppDelegate.swift in Sources */,
 			);
