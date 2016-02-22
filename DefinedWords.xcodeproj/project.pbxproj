@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39FA92031C7A1D0A0015519D /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA92021C7A1D0A0015519D /* WordModel.swift */; };
+		39FBCE921C795B69008069D5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FBCE901C795B69008069D5 /* RealmSwift.framework */; };
+		39FBCE951C795BE0008069D5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FBCE931C795BE0008069D5 /* Realm.framework */; };
+		39FBCE961C795BE0008069D5 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39FBCE931C795BE0008069D5 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39FBCE981C795BE0008069D5 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39FBCE941C795BE0008069D5 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B18F969B1C6DA08D00202E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F969A1C6DA08D00202E0C /* AppDelegate.swift */; };
 		B18F969D1C6DA08D00202E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F969C1C6DA08D00202E0C /* ViewController.swift */; };
 		B18F96A01C6DA08D00202E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18F969E1C6DA08D00202E0C /* Main.storyboard */; };
@@ -26,7 +31,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		39FBCE991C795BE0008069D5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				39FBCE981C795BE0008069D5 /* RealmSwift.framework in Embed Frameworks */,
+				39FBCE961C795BE0008069D5 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		39FA92021C7A1D0A0015519D /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		39FBCE8F1C795B69008069D5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		39FBCE901C795B69008069D5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		39FBCE931C795BE0008069D5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		39FBCE941C795BE0008069D5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		B18F96971C6DA08D00202E0C /* DefinedWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefinedWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18F969A1C6DA08D00202E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18F969C1C6DA08D00202E0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FBCE951C795BE0008069D5 /* Realm.framework in Frameworks */,
+				39FBCE921C795B69008069D5 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +85,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39FBCE8C1C795AD1008069D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39FBCE8F1C795B69008069D5 /* Realm.framework */,
+				39FBCE901C795B69008069D5 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			path = DefinedWords.xcodeproj;
+			sourceTree = "<group>";
+		};
 		B18F968E1C6DA08D00202E0C = {
 			isa = PBXGroup;
 			children = (
+				39FBCE931C795BE0008069D5 /* Realm.framework */,
+				39FBCE941C795BE0008069D5 /* RealmSwift.framework */,
 				B18F96991C6DA08D00202E0C /* DefinedWords */,
 				B18F96AE1C6DA08D00202E0C /* DefinedWordsTests */,
 				B18F96981C6DA08D00202E0C /* Products */,
+				39FBCE8C1C795AD1008069D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +123,7 @@
 				B18F969C1C6DA08D00202E0C /* ViewController.swift */,
 				B18F969E1C6DA08D00202E0C /* Main.storyboard */,
 				B18F96BA1C6DA7E300202E0C /* WordManager.swift */,
+				39FA92021C7A1D0A0015519D /* WordModel.swift */,
 				B18F96A11C6DA08D00202E0C /* Assets.xcassets */,
 				B18F96A31C6DA08D00202E0C /* LaunchScreen.storyboard */,
 				B18F96A61C6DA08D00202E0C /* Info.plist */,
@@ -109,6 +150,7 @@
 				B18F96931C6DA08D00202E0C /* Sources */,
 				B18F96941C6DA08D00202E0C /* Frameworks */,
 				B18F96951C6DA08D00202E0C /* Resources */,
+				39FBCE991C795BE0008069D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FA92031C7A1D0A0015519D /* WordModel.swift in Sources */,
 				B18F96BB1C6DA7E300202E0C /* WordManager.swift in Sources */,
 				B18F969D1C6DA08D00202E0C /* ViewController.swift in Sources */,
 				B18F969B1C6DA08D00202E0C /* AppDelegate.swift in Sources */,
@@ -331,6 +374,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DefinedWords.xcodeproj",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DefinedWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = friends.DefinedWords;
@@ -342,6 +391,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DefinedWords.xcodeproj",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DefinedWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = friends.DefinedWords;
@@ -392,6 +447,7 @@
 				B18F96B61C6DA08D00202E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B18F96B71C6DA08D00202E0C /* Build configuration list for PBXNativeTarget "DefinedWordsTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +456,7 @@
 				B18F96B91C6DA08D00202E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
