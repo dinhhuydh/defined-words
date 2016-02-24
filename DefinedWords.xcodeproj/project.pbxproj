@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B13F374F1C703CB0003DB2A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13F374E1C703CB0003DB2A9 /* Foundation.framework */; };
+		B13F37511C703CBA003DB2A9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13F37501C703CBA003DB2A9 /* SystemConfiguration.framework */; };
+		B13F37531C704011003DB2A9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13F37521C704011003DB2A9 /* CFNetwork.framework */; };
+		B13F37551C70401A003DB2A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13F37541C70401A003DB2A9 /* UIKit.framework */; };
+		B188B3791C6E537500C0B2BA /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B188B3781C6E537500C0B2BA /* WordTableViewController.swift */; };
 		B18F969B1C6DA08D00202E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F969A1C6DA08D00202E0C /* AppDelegate.swift */; };
-		B18F969D1C6DA08D00202E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F969C1C6DA08D00202E0C /* ViewController.swift */; };
 		B18F96A01C6DA08D00202E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18F969E1C6DA08D00202E0C /* Main.storyboard */; };
 		B18F96A21C6DA08D00202E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18F96A11C6DA08D00202E0C /* Assets.xcassets */; };
 		B18F96A51C6DA08D00202E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18F96A31C6DA08D00202E0C /* LaunchScreen.storyboard */; };
 		B18F96B01C6DA08D00202E0C /* DefinedWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F96AF1C6DA08D00202E0C /* DefinedWordsTests.swift */; };
 		B18F96BB1C6DA7E300202E0C /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F96BA1C6DA7E300202E0C /* WordManager.swift */; };
+		B18F96BD1C6E247400202E0C /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F96BC1C6E247400202E0C /* WordViewController.swift */; };
+		B18F96BF1C6E265500202E0C /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F96BE1C6E265500202E0C /* WordTableViewCell.swift */; };
+		B1CF46C01C6F6A1200CB5F53 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CF46BF1C6F6A1200CB5F53 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +34,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B13F374C1C70353A003DB2A9 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		B13F374D1C703567003DB2A9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B13F374E1C703CB0003DB2A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B13F37501C703CBA003DB2A9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B13F37521C704011003DB2A9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B13F37541C70401A003DB2A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B188B3781C6E537500C0B2BA /* WordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
 		B18F96971C6DA08D00202E0C /* DefinedWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefinedWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18F969A1C6DA08D00202E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B18F969C1C6DA08D00202E0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B18F969F1C6DA08D00202E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B18F96A11C6DA08D00202E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18F96A41C6DA08D00202E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +51,9 @@
 		B18F96AF1C6DA08D00202E0C /* DefinedWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedWordsTests.swift; sourceTree = "<group>"; };
 		B18F96B11C6DA08D00202E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18F96BA1C6DA7E300202E0C /* WordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
+		B18F96BC1C6E247400202E0C /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		B18F96BE1C6E265500202E0C /* WordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		B1CF46BF1C6F6A1200CB5F53 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13F37551C70401A003DB2A9 /* UIKit.framework in Frameworks */,
+				B13F37531C704011003DB2A9 /* CFNetwork.framework in Frameworks */,
+				B13F37511C703CBA003DB2A9 /* SystemConfiguration.framework in Frameworks */,
+				B13F374F1C703CB0003DB2A9 /* Foundation.framework in Frameworks */,
+				B1CF46C01C6F6A1200CB5F53 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,13 @@
 		B18F968E1C6DA08D00202E0C = {
 			isa = PBXGroup;
 			children = (
+				B13F37541C70401A003DB2A9 /* UIKit.framework */,
+				B13F37521C704011003DB2A9 /* CFNetwork.framework */,
+				B13F37501C703CBA003DB2A9 /* SystemConfiguration.framework */,
+				B13F374E1C703CB0003DB2A9 /* Foundation.framework */,
+				B13F374D1C703567003DB2A9 /* PrefixHeader.pch */,
+				B13F374C1C70353A003DB2A9 /* Bridging-Header.h */,
+				B1CF46BF1C6F6A1200CB5F53 /* MobileCoreServices.framework */,
 				B18F96991C6DA08D00202E0C /* DefinedWords */,
 				B18F96AE1C6DA08D00202E0C /* DefinedWordsTests */,
 				B18F96981C6DA08D00202E0C /* Products */,
@@ -80,12 +108,14 @@
 			isa = PBXGroup;
 			children = (
 				B18F969A1C6DA08D00202E0C /* AppDelegate.swift */,
-				B18F969C1C6DA08D00202E0C /* ViewController.swift */,
+				B188B3781C6E537500C0B2BA /* WordTableViewController.swift */,
 				B18F969E1C6DA08D00202E0C /* Main.storyboard */,
+				B18F96BE1C6E265500202E0C /* WordTableViewCell.swift */,
 				B18F96BA1C6DA7E300202E0C /* WordManager.swift */,
 				B18F96A11C6DA08D00202E0C /* Assets.xcassets */,
 				B18F96A31C6DA08D00202E0C /* LaunchScreen.storyboard */,
 				B18F96A61C6DA08D00202E0C /* Info.plist */,
+				B18F96BC1C6E247400202E0C /* WordViewController.swift */,
 			);
 			path = DefinedWords;
 			sourceTree = "<group>";
@@ -201,8 +231,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18F96BB1C6DA7E300202E0C /* WordManager.swift in Sources */,
-				B18F969D1C6DA08D00202E0C /* ViewController.swift in Sources */,
+				B188B3791C6E537500C0B2BA /* WordTableViewController.swift in Sources */,
+				B18F96BD1C6E247400202E0C /* WordViewController.swift in Sources */,
 				B18F969B1C6DA08D00202E0C /* AppDelegate.swift in Sources */,
+				B18F96BF1C6E265500202E0C /* WordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +363,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = DefinedWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = friends.DefinedWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -342,10 +381,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = DefinedWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = friends.DefinedWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -392,6 +438,7 @@
 				B18F96B61C6DA08D00202E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B18F96B71C6DA08D00202E0C /* Build configuration list for PBXNativeTarget "DefinedWordsTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +447,7 @@
 				B18F96B91C6DA08D00202E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
