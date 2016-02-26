@@ -54,7 +54,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //UITableViewDelegate
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            [self .deleteRowAtIndexPath(indexPath)]
+        }
+    }
+    
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.Delete
     }
     
     //UITableViewDataSource
@@ -68,9 +74,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    //Delete row at index. This is called to delete a row from table view
-    //TODO: add edit button on table view navigation controller, 
-    //when edit button is tapped, user has the ability to delete a row
+    /**
+    This method deletes row at a given index path, also deletes the contained record from database
+    */
     func deleteRowAtIndexPath(indexPath: NSIndexPath) {
         wordManager.deleteWordAtIndex(indexPath.row)
         wordList.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
