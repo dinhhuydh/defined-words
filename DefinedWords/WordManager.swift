@@ -22,7 +22,7 @@ class WordManager: NSObject {
      */
     func addWord(text: String) {
         //Create a word model
-        let newWordModel=WordModel()
+        let newWordModel = WordModel()
         newWordModel.word = text
         newWordModel.searchedDate = NSDate()
         
